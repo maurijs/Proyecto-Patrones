@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mauri\\Documents\\Facultad\\5to\\Sistemas de Informacion\\ProyectoFinal\\ProyectoFinal.csproj": {}
+    "C:\\Users\\mauri\\Documents\\Facultad\\5to\\Sistemas de Informacion\\Proyecto-Patrones\\ProyectoFinal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mauri\\Documents\\Facultad\\5to\\Sistemas de Informacion\\ProyectoFinal\\ProyectoFinal.csproj": {
+    "C:\\Users\\mauri\\Documents\\Facultad\\5to\\Sistemas de Informacion\\Proyecto-Patrones\\ProyectoFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mauri\\Documents\\Facultad\\5to\\Sistemas de Informacion\\ProyectoFinal\\ProyectoFinal.csproj",
+        "projectUniqueName": "C:\\Users\\mauri\\Documents\\Facultad\\5to\\Sistemas de Informacion\\Proyecto-Patrones\\ProyectoFinal.csproj",
         "projectName": "ProyectoFinal",
-        "projectPath": "C:\\Users\\mauri\\Documents\\Facultad\\5to\\Sistemas de Informacion\\ProyectoFinal\\ProyectoFinal.csproj",
+        "projectPath": "C:\\Users\\mauri\\Documents\\Facultad\\5to\\Sistemas de Informacion\\Proyecto-Patrones\\ProyectoFinal.csproj",
         "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mauri\\Documents\\Facultad\\5to\\Sistemas de Informacion\\ProyectoFinal\\obj\\",
+        "outputPath": "C:\\Users\\mauri\\Documents\\Facultad\\5to\\Sistemas de Informacion\\Proyecto-Patrones\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config"
