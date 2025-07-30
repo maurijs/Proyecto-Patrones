@@ -9,7 +9,7 @@ public abstract class PagoStrategy
         {
             foreach (var o in observadores)
             {
-                o.Notificar(monto, resumen)
+                o.Notificar(monto, resumen);
             }
         }
     }
@@ -24,8 +24,9 @@ public abstract class PagoStrategy
     }
 
     public void AgregarObservador(PagoObserver obs) => observadores.Add(obs);
-    public void QuitarObservador(PagoObserver obs) {
-        var observador = observadores.FirstOrDefault(o => o.GetType == obs.GetType )
+    public void QuitarObservador(PagoObserver obs)
+    {
+        var observador = observadores.FirstOrDefault(o => o.GetType == obs.GetType);
         if(observador != null) observadores.Remove(observador);
     }
     public abstract bool Pagar(double monto);
@@ -48,7 +49,7 @@ public class PagoTarjetaCredito : PagoStrategy
     public string Tarjeta;
     public int codigoSeguridad; 
     public int cantidadCuotas; 
-    public bool Pagar(double monto)
+    public override bool Pagar(double monto)
     {
         Console.WriteLine("[Tarjeta de crebdto] Pagando: " + monto);
         return true;

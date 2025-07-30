@@ -9,10 +9,9 @@ public abstract class PagoObserver
 public class WhatsappObs : PagoObserver
 {
     private string telefono;
-    private string nombre;
     public WhatsappObs(Usuario usuario)
     {
-        this.nombre = usuario.GetNombre();
+        this.nombreUsuario = usuario.GetNombre();
         this.telefono = usuario.GetTelefono();
     }
 
@@ -36,19 +35,18 @@ public class WhatsappObs : PagoObserver
     public override void Notificar(double monto, List<string> resumen)
     {
         string mensaje = CrearMensaje(monto, resumen);
-        Console.WriteLine($"[WhatsApp -> {telefono}]: {mensaje}");
+        EnviarMensaje(mensaje);
         // API real para enviar el mensaje
     }
 }
 
 public class MailObs : PagoObserver
 {
-    private string nombre;
     private string correo;
 
     public MailObs(Usuario usuario)
     {
-        this.nombre = usuario.GetNombre();
+        this.nombreUsuario = usuario.GetNombre();
         this.correo = usuario.GetCorreo();
     }
 
@@ -72,7 +70,7 @@ public class MailObs : PagoObserver
     public override void Notificar(double monto, List<string> resumen)
     {
         string mensaje = CrearMensaje(monto, resumen);
-        Console.WriteLine($"[Email -> {correo}]: {mensaje}");
+        EnviarMensaje(mensaje);
         // Aquí podrías usar un cliente SMTP real
     }
 }
